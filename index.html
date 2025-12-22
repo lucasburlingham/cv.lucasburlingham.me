@@ -5,11 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lucas Burlingham - Curriculum Vitae</title>
-	<link rel="stylesheet" href="/style.css">
-	<meta name="epoch" content="1761749118">
+	<!-- <link rel="stylesheet" href="/style.css"> -->
+	<meta name="epoch" content="1766372433">
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-		@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 		html {
 			margin: 0;
@@ -33,22 +32,27 @@
 			}
 		}
 
-
-
 		h1 {
 			font-weight: 700;
 			text-align: center;
+			font-size: larger;
+		}
+
+		p {
+			font-size: 11pt;
 		}
 
 		p#contact_info {
 			font-weight: 300;
 			text-align: center;
+			font-size: 10pt;
 		}
 
 		h2 {
 			text-align: left;
 			text-decoration: underline;
 			text-transform: uppercase;
+			font-size: 14pt;
 		}
 
 		a {
@@ -58,9 +62,19 @@
 			color: black;
 		}
 
-		section {
-			padding-bottom: 2em;
+		a.hiddenlink {
+			text-decoration: none;
+			color: black;
 		}
+
+		a.hiddenlink:hover {
+			text-decoration: underline;
+			text-decoration-style: dotted;
+		}
+
+		/* section {
+			padding-bottom: 20em;
+		} */
 
 		footer {
 			padding: 2em;
@@ -68,28 +82,49 @@
 			text-align: center;
 		}
 
+		.skills {
+			/* center */
+			/* margin-left: auto; */
+			/* margin-right: auto; */
+			margin-bottom: .5em;
+			margin-top: .5em;
+		}
+
+		.hideuntilprint {
+			/* hide phone number on screen */
+			display: none;
+		}
+
 
 		@media print {
 			section {
-				page-break-inside: avoid;
+				break-inside: avoid;
 			}
 
-			body * p,
-			body * li {
+			body {
 				font-size: 10pt;
 			}
 
 			#name {
-				font-size: 20pt;
+				font-size: 15pt;
 			}
 
 			h2 {
-				font-size: 13pt;
+				font-size: 12pt;
 			}
 
 			a {
 				text-decoration: none;
 				color: black;
+			}
+
+			footer {
+				display: none;
+			}
+
+			.hideuntilprint {
+				/* show phone number only when printing */
+				display: inline;
 			}
 		}
 	</style>
@@ -100,80 +135,19 @@
 		Lucas Burlingham
 	</h1>
 	<p id="contact_info">
-		<a href="mailto:lucas@lucasburlingham.me">lucas@lucasburlingham.me</a> | (812) 391-2874 | Bloomington, IN | <a
-			href="https://linkedin.com/in/lucas-burlingham" target="_blank"
+		<a href="mailto:lucas@lucasburlingham.me">lucas@lucasburlingham.me</a> | <span class="hideuntilprint">(812)
+			391-2874 |</span> Bloomington, IN | <a href="https://linkedin.com/in/lucas-burlingham" target="_blank"
 			rel="noopener noreferrer">linkedin.com/in/lucas-burlingham</a>
 	</p>
 	<section>
 		<h2>Summary</h2>
-		<p>Trusted System Administrator with 5+ years of experience supporting secure environments and 1300 users globally. Proven ability to lead technical initiatives and deliver solutions in classified settings. Holds a current TS/SCI clearance and 
-			CompTIA A+, Security+ and Akamai Cloud Computing Foundations. Qualified as a DoD 8140 administrator. Seeking a job that has a direct impact on his community and presents a challenge and
-			opportunity to grow.</p>
-	</section>
-	<section>
-		<h2>Experience</h2>
-		<div id="usarmy">
-			<p>
-			<b>United States Army</b> - Signal Support Systems Specialist <span style="float: inline-end;">June 2022 -
-				June 2026</span>
+		<p>Trusted <b>System Administrator</b> with 5+ years of technical experience supporting 1300 users
+			globally. Able to lead technical initiatives and <b>deliver solutions</b> in classified settings. Holds a
+			current <b>TS/SCI</b> clearance and
+			<b>CompTIA A+</b>,<b> Security+</b> and Akamai <b>Cloud Computing</b> Foundations certifications. Qualified
+			as a DoD 8140
+			administrator.
 		</p>
-		<p style="margin-left: 2em;">
-			<ul>
-				<li>
-					Worked in a large team and was responsible for the support of over 1300
-			users and five subordinate IT departments 
-				</li>
-				<li>
-					Maintained and installed user workstations, cellular devices, and critical
-			network infrastructure that soldiers depended upon while working around the world
-				</li>
-				<li>
-					Appointed as the 4th Psychological Operations Group (A) Telecommunications Officer
-			to oversee the provisioning, maintenance, and property control for mobile devices issued to senior leaders
-			within the group
-				</li>
-				<li>
-					Oversaw the maintenance of 62 tactical and non-tactical radios and
-			led small group training sessions focused on the use of tactical radios
-				</li>
-				<li>
-					Developed a truly anonymous workplace climate feedback survey on a LAMP-like (Linux, Apache, SQLite, PHP) stack with admin approver dashboard utilizing
-			Cloudflare Tunnels and Turnstile supported by an Akamai Cloud VPS. This increased unit morale and led to positive open discussions on improving the organization.
-				</li>
-			</ul>  
-			<!---
-			Achieved the rank of Corporal after being
-			granted promotable status by a board of senior leaders and graduating the Fort Bragg Non-Commissioned Officer Basic Leader's Course.
-			-->
-			<br>
-			<b>Skills</b>: <i>Windows & Linux Administration, Leadership, Troubleshooting, Customer Service, Mobile
-			Device Management, Analog & Digital Communications</i>
-		</p>
-		</div>
-		<div id="ganttravel">
-			<p>
-			<b>Gant Travel Management</b> - Information Technology Intern <span style="float: inline-end;">February 2020 -
-				April 2020</span>
-		</p>
-		<p style="margin-left: 2em;">
-			<ul>
-				<li>
-					Assisted with preparing new computers for remote staff to include installing Windows 10,
-	configuring user data, installing programs, updating, and installing firmware
-				</li>
-				<li>
-					Organized and cleaned the IT staff workspace and performed data destruction
-				</li>
-				<li>
-					Performed administrative and related tasks such as user account creation, monitoring data system uptime, 
-					troubleshooting user productivity systems, and answering questions via Ring Central
-				</li>
-			</ul>
-			
-			<br>
-			<b>Skills</b>: <i>IT Operations, Problem solving, Troubleshooting, Customer Service, Microsoft Windows, Communication</i>
-		</p>
-		</div>
 	</section>
 	<section>
 		<h2>
@@ -188,10 +162,110 @@
 					April 2025</span></li>
 		</ul>
 	</section>
-<section>
+	<section>
+		<h2>Experience</h2>
+		<div id="usarmy">
+			<p>
+				United States Army - <b>IT Helpdesk & Administrator</b> <span style="float: inline-end;">June 2022
+					-
+					June 2026</span>
+			</p>
+			<div style="margin-left: 2em;">
+				<b>Skills</b>: <i>Windows & Linux Administration, Leadership, Troubleshooting, Customer Service, Mobile
+					Device Management, Analog & Digital Communications</i>
+
+				<ul>
+					<li>
+						Supported over 1300 users across five subordinate IT departments in a large, distributed team.
+					</li>
+					<li>
+						Maintained and installed user workstations, cellular devices, and critical
+						network infrastructure that soldiers depended upon while working around the world
+					</li>
+					<li>
+						Developed a truly anonymous workplace climate feedback survey on a LAMP-like (Linux, Apache,
+						SQLite,
+						PHP) stack with admin approver dashboard utilizing
+						Cloudflare Tunnels and Turnstile supported by an Akamai Cloud VPS. This increased unit morale
+						and
+						led to positive open discussions on improving the organization.
+					</li>
+					<li>
+						Appointed as the 4th Psychological Operations Group (A) Telecommunications Officer
+						to oversee the provisioning, maintenance, and lifecycle management for 100+ mobile devices issued to
+						senior leaders within the group
+					</li>
+					<li>
+						Oversaw the maintenance of 62 tactical and non-tactical radios and
+						led small group training sessions focused on the use of tactical radios
+					</li>
+				</ul>
+			</div>
+
+			<!---
+			Achieved the rank of Corporal after being
+			granted promotable status by a board of senior leaders and graduating the Fort Bragg Non-Commissioned Officer Basic Leader's Course.
+			-->
+		</div>
+		<!-- <hr> -->
+		<div id="ganttravel">
+			<p>
+				Gant Travel Management - <b>Information Technology Intern</b> <span style="float: inline-end;">February
+					2020 -
+					April 2020</span>
+			</p>
+			<div style="margin-left: 2em;">
+				<b>Skills</b>: <i>IT Operations, Problem solving, Troubleshooting, Customer Service, Microsoft Windows,
+					Communication</i>
+
+				<ul>
+					<li>
+						Prepared new computers for remote staff to include installing Windows 10,
+						configuring user data, installing programs, updating, and installing firmware
+					</li>
+					<li>
+						Organized the IT staff workspace and performed data destruction
+					</li>
+					<li>
+						Performed administrative and related tasks such as user account creation, monitoring data system
+						uptime, troubleshooting user productivity systems, and completing service calls via Ring Central & LogMeIn
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Projects & Skills</h2>
+		<ul>
+			<li><a href="jovarkos.org" class="hiddenlink">jovarkos.org</a> - Grew a small community comprised of
+				technically-inclined teenagers
+				to grow personal Linux & computing skills. Built software for and configured infrastructure to build and
+				maintain a distributable installation image.
+				<div class="skills">
+					<b>Skills:</b> <i>Linux Development, Bash, Git, Web Design and Hosting, DevOps, Community
+						Management</i>
+				</div>
+			</li>
+			<li>
+				<a href="bsarmy.com" class="hiddenlink">bsarmy.com</a> - Built site to help soldiers view & share
+				resources while connecting to their community. The platform was designed around a LAMP stack and
+				utilized Bootstrap for the UI. It integrated Twilio Verify for password-less login, Cloudflare Tunnels
+				as a reverse proxy, Tailscale for secure access, and ntfy
+				for realtime chat and notifications. Project served active users and supported community initiatives,
+				including a trash pickup drive and shared resource repositories.
+				<div class="skills">
+					<b>Skills:</b> <i>Linux Administration, git, web design and UX, MySQL DB design, networking,
+						community
+						outreach.</i>
+				</div>
+
+			</li>
+		</ul>
+	</section>
+	<section>
 		<h2>Education</h2>
 		<p>
-			<b>Western Governors University</b><span style="float: inline-end;">Started August 2023, Incomplete</span>
+			Western Governors University<span style="float: inline-end;">Started August 2023 - Present</span>
 			<br>
 			<i>Bachelor of Science in Cybersecurity and Information Assurance</i>
 		</p>
@@ -200,36 +274,12 @@
 			operating systems, as well as an emphasis on governance and regulatory compliance.
 		</p>
 	</section>
-	<section>
-		<h2>Projects & Skills</h2>
-		<ul>
-			<li>jovarkos.org - Grew a small community comprised of technically-inclined teenagers
-				to grow personal Linux & computing skills. Built software for and configured infrastructure to build and
-				maintain a distributable installation image. We described it as: <br>
-				<i>"A GNU/Linux distribution based on Arch Linux with the goal of striving towards a out of box
-					experience the Linux desktop has never seen before." <br></i>
-				<b>Skills:</b> <i>Linux development, Bash, git, web design and hosting, devops, community management.</i>
-			</li>
-			<li>
-				bsarmy.com - Built site to help soldiers view & share resources while connecting to their community. The
-				platform was designed around a LAMP stack and utilized Bootstrap for the UI. It integrated Twilio Verify
-				for password-less login, Cloudflare Tunnels as a reverse proxy, Tailscale for secure access, and ntfy
-				for realtime chat and notifications. More features were planned, but the project was dropped due to lack 
-				of interest by leadership.
-				<br>
-				Although it didn't gain traction, those who used the platform found it valuable for connecting with
-				others and accessing resources, and it sparked initiatives such as a trash pickup drive (40 gal/day avg.
-				collected!) and Dining Facility schedule collection repo.
-				<br>
-				<b>Skills:</b> <i>Linux Administration, git, web design and UX, MySQL DB design, networking, community outreach.</i>
-			</li>
-		</ul>
-	</section>
 	<footer>
 		<p>
-			Last updated 2025.10.29
+			Last updated 2025.12.21
 		</p>
-		@ 2025 Lucas Burlingham. All rights reserved. Licensed under the <a href="https://lucasburlingham.me/LICENSE.html">Creator's License</a>.
+		@ 2025 Lucas Burlingham. All rights reserved. Licensed under the <a
+			href="https://lucasburlingham.me/LICENSE.html">Creator's License</a>.
 	</footer>
 </body>
 
