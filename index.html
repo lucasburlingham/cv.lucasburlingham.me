@@ -95,6 +95,26 @@
 			display: none;
 		}
 
+		button {
+			padding: .5em 1em;
+			font-size: 10pt;
+			cursor: pointer;
+			border: 1px solid black;
+			background-color: transparent;
+		}
+
+		button:hover {
+			background-color: black;
+			color: white;
+			transition: background-color 0.3s, color 0.3s;
+			border: 1px solid black;
+			/* add a subtle shadow */
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+			/* add a slight scale effect */
+			transform: scale(1.05);
+			transition: transform 0.5s ease-in-out;
+		}
+
 
 		@media print {
 			section {
@@ -274,6 +294,7 @@
 		</p>
 	</section>
 	<footer>
+		<button onclick="window.print()">Print</button>
 		<p>
 			Last updated 2026.02.19
 		</p>
