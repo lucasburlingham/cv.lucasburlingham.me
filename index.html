@@ -53,6 +53,8 @@
 			text-decoration: underline;
 			text-transform: uppercase;
 			font-size: 14pt;
+			padding: 0;
+			margin: 0;
 		}
 
 		a {
@@ -115,7 +117,6 @@
 			transition: transform 0.5s ease-in-out;
 		}
 
-
 		@media print {
 			section {
 				break-inside: avoid;
@@ -123,6 +124,7 @@
 
 			body {
 				font-size: 10pt;
+				line-height: 1.2;
 			}
 
 			#name {
@@ -131,6 +133,7 @@
 
 			h2 {
 				font-size: 12pt;
+				text-decoration: none;
 			}
 
 			a {
@@ -184,11 +187,37 @@
 	</section>
 	<section>
 		<h2>Experience</h2>
+		<div id="preborn">
+			<p>
+				Mission: PreBorn! - <b>IT Intern</b> <span style="float: inline-end;">January 2026
+					- April 2026</span>
+			</p>
+			<div style="margin-left: 2em;">
+				<b>Skills</b>: <i>MacOS & Windows Administration, Business Analysis, Troubleshooting, Customer Service,
+					Mobile
+					Device Management, Azure, Entra ID</i>
+				<ul>
+					<li>
+						Built tooling and processes around automated MacOS provisioning
+					</li>
+					<li>
+						Managed and maintained MacOS & Windows systems with Jamf Now, Level RMM, and Intune
+					</li>
+					<li>
+						Supported the IT needs of 100+ users across the organization and provided technical support to
+						employees at all levels
+					</li>
+					<li>
+						Developed a changelog platform using common web technologies and hosted on Docker. Currently
+						integrating it into Asana.
+					</li>
+				</ul>
+			</div>
+		</div>
 		<div id="usarmy">
 			<p>
 				United States Army - <b>IT Helpdesk & Administrator</b> <span style="float: inline-end;">June 2022
-					-
-					June 2026</span>
+					- June 2026</span>
 			</p>
 			<div style="margin-left: 2em;">
 				<b>Skills</b>: <i>Windows & Linux Administration, Leadership, Troubleshooting, Customer Service, Mobile
@@ -196,7 +225,9 @@
 
 				<ul>
 					<li>
-						Supported over 1300 users across five subordinate IT departments in a large, distributed team. Managed Microsoft Active Directory OU with hundreds of users, security groups, and distribution lists and worked with the entitlement manager to provision users with Office 365 licenses.
+						Supported over 1300 users across five subordinate IT departments in a large, distributed team.
+						Managed Microsoft Active Directory OU with hundreds of users, security groups, and distribution
+						lists and worked with the entitlement manager to provision users with Office 365 licenses.
 					</li>
 					<li>
 						Maintained and installed user workstations, cellular devices, and critical
@@ -204,21 +235,24 @@
 					</li>
 					<li>
 						Developed a truly anonymous workplace climate feedback survey on a LAMP-like (Linux, Apache,
-						SQLite,
-						PHP) stack with admin approver dashboard utilizing
-						Cloudflare Tunnels and Turnstile supported by an Akamai Cloud VPS. This increased unit morale
-						and
-						led to positive open discussions on improving the organization.
+						SQLite, PHP) stack with admin approver dashboard utilizing Cloudflare Tunnels and Turnstile
+						supported by an Akamai Cloud VPS. This increased unit morale and led to positive open
+						discussions on improving the organization.
 					</li>
 					<li>
 						Appointed as the 4th Psychological Operations Group (A) Telecommunications Officer
-						to oversee the provisioning, maintenance, and lifecycle management for 100+ mobile devices issued to
+						to oversee the provisioning, maintenance, and lifecycle management for 100+ mobile devices
+						issued to
 						senior leaders within the group
 					</li>
-					<li>
+					<!-- <li>
 						Oversaw the maintenance of 62 tactical and non-tactical radios and
 						led small group training sessions focused on the use of tactical radios
-					</li>
+					</li> -->
+								<!---
+			Achieved the rank of Sergeant after being
+			granted promotable status by a board of senior leaders and graduating the Fort Bragg Non-Commissioned Officer Basic Leader's Course.
+			-->
 				</ul>
 			</div>
 
@@ -230,9 +264,8 @@
 		<!-- <hr> -->
 		<div id="ganttravel">
 			<p>
-				Gant Travel Management - <b>Information Technology Intern</b> <span style="float: inline-end;">February
-					2020 -
-					April 2020</span>
+				Gant Travel Management - <b>IT Intern</b> <span style="float: inline-end;">February
+					2020 - April 2020</span>
 			</p>
 			<div style="margin-left: 2em;">
 				<b>Skills</b>: <i>IT Operations, Problem solving, Troubleshooting, Customer Service, Microsoft Windows,
@@ -248,7 +281,8 @@
 					</li>
 					<li>
 						Performed administrative and related tasks such as user account creation, monitoring data system
-						uptime, troubleshooting user productivity systems, and completing service calls via Ring Central & LogMeIn
+						uptime, troubleshooting user productivity systems, and completing service calls via Ring Central
+						& LogMeIn
 					</li>
 				</ul>
 			</div>
@@ -260,7 +294,8 @@
 			<li><a href="jovarkos.org" class="hiddenlink">jovarkos.org</a> - Grew a small community comprised of
 				technically-inclined teenagers
 				to grow personal Linux & computing skills. Built software for and configured infrastructure to build and
-				maintain a distributable installation image based on Ubuntu and later Arch Linux. The infrastructure ran on CentOS Stream and Debian servers.
+				maintain a distributable installation image based on Ubuntu and later Arch Linux. The infrastructure ran
+				on CentOS Stream and Debian servers.
 				<div class="skills">
 					<b>Skills:</b> <i>Leadership, Linux Development, Bash, Git, Web Design and Hosting, DevOps</i>
 				</div>
@@ -300,7 +335,8 @@
 		</p>
 		@ 2025 Lucas Burlingham. All rights reserved. Licensed under the <a
 			href="https://lucasburlingham.me/LICENSE.html">Creator's License</a>.
-			<p>Hosted on <a href="https://pages.cloudflare.com/">Cloudflare Pages</a> and deployed from <a href="https://github.com/lucasburlingham/cv.lucasburlingham.me">GitHub</a>.</p>
+		<p>Hosted on <a href="https://pages.cloudflare.com/">Cloudflare Pages</a> and deployed from <a
+				href="https://github.com/lucasburlingham/cv.lucasburlingham.me">GitHub</a>.</p>
 	</footer>
 </body>
 
