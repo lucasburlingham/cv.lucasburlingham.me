@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lucas Burlingham - Curriculum Vitae</title>
 	<!-- <link rel="stylesheet" href="/style.css"> -->
-	<meta name="epoch" content="1773969399">
+	<meta name="epoch" content="1775433600">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -170,12 +170,12 @@
 	</p>
 	<section>
 		<h2>Summary</h2>
-		<p>Trusted <b>System Administrator</b> with 5+ years of technical experience supporting 1300 users
-			globally. Able to lead technical initiatives and <b>deliver solutions</b> in classified settings. Holds a
-			current <b>TS/SCI</b> clearance and
-			<b>CompTIA A+</b>,<b> Security+</b> and Akamai <b>Cloud Computing</b> Foundations certifications. Qualified
-			as a DoD 8140
-			administrator.
+		<p>Trusted <b>Systems Administrator</b> with 5+ years of technical experience supporting
+			1,300+ users globally. Comfortable delivering solutions in classified environments - from endpoint
+			administration to deploying and maintaining self-hosted applications and containerized services
+			(Docker/Docker Compose) with an emphasis on stability, availability, and rapid troubleshooting. Holds an
+			active <b>TS/SCI</b> clearance and <b>CompTIA Security+</b>, <b>A+</b> and Akamai <b>Cloud Computing</b>
+			Foundations certifications. DoD 8140 qualified.
 		</p>
 	</section>
 	<section>
@@ -187,8 +187,8 @@
 			<li>CompTIA A+ <span style="float: inline-end; font-style: italic;">Since December 2023</span></li>
 			<li>Akamai Cloud Computing Foundations <span style="float: inline-end; font-style: italic;">Since April
 					2025</span></li>
-			<li>Amateur Radio License, General Class <span style="float: inline-end; font-style: italic; ">Since
-					April 2025</span></li>
+			<!-- <li>Amateur Radio License, General Class <span style="float: inline-end; font-style: italic; ">Since
+					April 2025</span></li> -->
 		</ul>
 	</section>
 	<section>
@@ -204,9 +204,9 @@
 					Device Management, Azure, Entra ID</i>
 				<ul>
 					<li>
-						Built tooling in Bash and to automate the provisioning of new user accounts and devices,
-						improving onboarding efficiency, reducing manual errors, and brought the average time for a new
-						hire's first day IT setup from ~2 hours to under 12 minutes.
+						Built Bash tooling to automate provisioning of new user accounts and devices, improving onboarding
+						efficiency and reducing manual errors; cut new-hire first-day IT setup from ~2 hours to under 12
+						minutes.
 					</li>
 					<li>
 						Managed and maintained MacOS & Windows endpoints with Jamf Now, Level RMM, and Intune. Created
@@ -219,9 +219,9 @@
 						standards.
 					</li>
 					<li>
-						Designed and deployed an internal changelog platform using PHP and SQLite, containerized with
-						Docker, to improve visibility into IT changes and system updates. Currently integrating it with
-						Asana for cross-team workflow tracking.
+						Designed and deployed an internal changelog platform (PHP + SQLite), packaged with Docker Compose,
+						to improve visibility into IT changes and system updates; integrating with Asana for cross-team
+						workflow tracking.
 					</li>
 				</ul>
 			</div>
@@ -237,15 +237,18 @@
 				<ul>
 					<li>
 						Administered and maintained secure Windows and Linux infrastructure supporting 1,300+ global
-						users across five operational departments, ensuring mission continuity.
+						users across five operational departments, prioritizing uptime, performance, and mission
+						continuity.
 					</li>
 					<li>
-						Installed and maintained user workstations, mobile devices, and critical network infrastructure
-						supporting soldiers worldwide, ensuring reliable communication and mission readiness.
+						Installed, configured, and maintained user workstations, mobile devices, and LAN/network
+						infrastructure supporting soldiers worldwide, ensuring reliable communication and mission
+						readiness.
 					</li>
 					<li>
-						Designed and deployed a secure, internally hosted web application using Linux, Apache, SQLite,
-						PHP, Cloudflare Tunnels, and Akamai Cloud to improve organizational transparency and morale.
+						Designed and deployed a secure, internally hosted web application (Linux/Apache/PHP/SQLite) using
+						Cloudflare Tunnels and Akamai Cloud to provide controlled access and improve organizational
+						transparency and morale.
 					</li>
 					<li>
 						Appointed Telecommunications Officer for the 4th Psychological Operations Group (A), overseeing
@@ -299,27 +302,31 @@
 	<section>
 		<h2>Projects & Skills</h2>
 		<ul>
-			<li><a href="jovarkos.org" class="hiddenlink">jovarkos.org</a> - Grew a small community comprised of
-				technically-inclined teenagers
-				to grow personal Linux & computing skills. Built software for and configured infrastructure to build and
-				maintain a distributable installation image based on Ubuntu and later Arch Linux. The infrastructure ran
-				on CentOS Stream and Debian servers.
+			<li><a href="https://jovarkos.org" class="hiddenlink">jovarkos.org</a> - Grew a small technical community to
+				build Linux & computing skills. Built software and maintained infrastructure to create and distribute
+				custom Ubuntu- and Arch-based installation images; operated build servers on CentOS Stream and Debian.
 				<div class="skills">
 					<b>Skills:</b> <i>Leadership, Linux Development, Bash, Git, Web Design and Hosting, DevOps</i>
 				</div>
 			</li>
 			<li>
-				<a href="bsarmy.com" class="hiddenlink">bsarmy.com</a> - Built site to help soldiers view & share
-				resources while connecting to their community. The platform was designed around a LAMP stack and
-				utilized Bootstrap for the UI. It integrated Twilio Verify for password-less login, Cloudflare Tunnels
-				as a reverse proxy, Tailscale for secure access, and ntfy for realtime chat and notifications.
-				Project served active users and supported community initiatives,
-				including a trash pickup drive and shared resource repositories.
+				<a href="https://bsarmy.com" class="hiddenlink">bsarmy.com</a> - Built and operated a self-hosted web
+				platform for soldiers to share resources. Implemented a LAMP stack with Bootstrap UI, passwordless login
+				(Twilio Verify), and secure remote access via Cloudflare Tunnel (reverse proxy) and Tailscale; added
+				ntfy for real-time chat and notifications.
 				<div class="skills">
-					<b>Skills:</b> <i>Linux Administration, git, web design and UX, MySQL DB design, networking,
+					<b>Skills:</b> <i>Linux Administration, Git, web design and UX, MySQL DB design, networking,
 						community outreach.</i>
 				</div>
 
+			</li>
+			<li>
+				<a href="https://github.com/lucasburlingham/changelog" class="hiddenlink">github.com/lucasburlingham/changelog</a>
+				- Built a lightweight changelog web app (PHP + SQLite) with a browser UI and JSON API, packaged with
+				Docker Compose for fast deployment in internal environments.
+				<div class="skills">
+					<b>Skills:</b> <i>Docker Compose, Linux Administration, PHP, SQLite, API Design</i>
+				</div>
 			</li>
 		</ul>
 	</section>
@@ -338,7 +345,7 @@
 	<footer>
 		<button onclick="window.print()">Print</button>
 		<p>
-			Last updated on <span id="date_updated"><noscript>2026.03.18</noscript></span>.
+			Last updated on <span id="date_updated"><noscript>2026.04.06</noscript></span>.
 			<script>
 				document.getElementById('date_updated').textContent = new Date(parseInt(document.querySelector('meta[name="epoch"]').getAttribute('content')) * 1000).toLocaleDateString();
 			</script>
